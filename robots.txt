@@ -3,6 +3,6 @@ Allow: /
 Disallow: /admin/
 Disallow: /search/
 
-Sitemap: https://sidhibatra.github.io/S.B.-poems/sitemap.xml
+Sitemap: https://sidhibatra.github.io/sbpoems/sitemap.xml
 
 # Crawl-delay: 10
