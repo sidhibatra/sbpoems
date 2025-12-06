@@ -1,13 +1,46 @@
+# _config.yml for GitHub Pages
+
+# Basic site settings
+title: "S.B. Poems - Poetry by Sidhi Batra"
+description: "A collection of beautiful poems by Sidhi Batra"
+url: "https://sidhibatra.github.io"
+baseurl: "/S.B.-poems"  # Your repository name
+author: "Sidhi Batra"
+
+# GitHub Pages settings
+theme: null  # Important: Disable Jekyll theme
+plugins: []  # Important: No plugins
+
+# Include these file types (allows XML/TXT files to be served)
 include:
   - ".xml"
   - ".txt"
   - ".html"
+  - ".css"
+  - ".js"
 
-plugins:
-  - jekyll-sitemap
-  - jekyll-seo-tag
+# Exclude these from processing
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
 
-title: "S.B. Poems - Poetry by Sidhi Batra"
-description: "A collection of beautiful poems by Sidhi Batra"
-url: "https://sidhibatra.github.io"
-baseurl: "/S.B.-poems"
+# Build settings
+markdown: kramdown
+highlighter: rouge
+
+# Enable CORS for sitemap and robots.txt
+cors:
+  enabled: true
+
+# GitHub Pages specific
+github:
+  is_project_page: true
+
+# SEO settings
+seo:
+  title: true
+  description: true
+  author: true
