@@ -10,25 +10,25 @@
     <priority>1.00</priority>
   </url>
   <url>
-    <loc>https://sidhibatra.github.io/S.B.-poems/#home</loc>
+    <loc>https://sidhibatra.github.io/sbpoems/#home</loc>
     <lastmod>2024-03-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
   </url>
   <url>
-    <loc>https://sidhibatra.github.io/S.B.-poems/#poems</loc>
+    <loc>https://sidhibatra.github.io/sbpoems/#poems</loc>
     <lastmod>2024-03-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
   </url>
   <url>
-    <loc>https://sidhibatra.github.io/S.B.-poems/#about</loc>
+    <loc>https://sidhibatra.github.io/sbpoems/#about</loc>
     <lastmod>2024-03-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://sidhibatra.github.io/S.B.-poems/#contact</loc>
+    <loc>https://sidhibatra.github.io/sbpoems/#contact</loc>
     <lastmod>2024-03-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.70</priority>
