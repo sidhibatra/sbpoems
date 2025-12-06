@@ -1,0 +1,2166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S.B. Poems - Sanctuary of Words</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Lora:wght@400;500&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Base Styles & Color Scheme */
+        :root {
+            --dusty-lavender: #6D6875;
+            --muted-rose: #B5838D;
+            --off-white: #FFFBFF;
+            --soft-black: #1B2021;
+            --blush-pink: #E5989B;
+            --light-beige: #F7F3F0;
+            --shadow: rgba(109, 104, 117, 0.1);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Lora', serif;
+            line-height: 1.6;
+            color: var(--soft-black);
+            background-color: var(--off-white);
+            background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%23b5838d' fill-opacity='0.03' fill-rule='evenodd'/%3E%3C/svg%3E");
+        }
+        
+        h1, h2, h3, h4, h5 {
+            font-family: 'Cormorant Garamond', serif;
+            font-weight: 600;
+            color: var(--dusty-lavender);
+        }
+        
+        .poem-text {
+            font-family: 'EB Garamond', serif;
+            font-size: 1.2rem;
+            line-height: 1.8;
+            white-space: pre-line;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header & Navigation */
+        header {
+            background-color: rgba(255, 251, 255, 0.95);
+            box-shadow: 0 2px 15px var(--shadow);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            padding: 15px 0;
+        }
+        
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: var(--dusty-lavender);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo i {
+            color: var(--blush-pink);
+            margin-right: 10px;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        nav li {
+            margin-left: 30px;
+        }
+        
+        nav a {
+            text-decoration: none;
+            color: var(--muted-rose);
+            font-weight: 500;
+            font-size: 1.1rem;
+            transition: color 0.3s;
+            position: relative;
+        }
+        
+        nav a:hover {
+            color: var(--dusty-lavender);
+        }
+        
+        nav a.active {
+            color: var(--dusty-lavender);
+        }
+        
+        nav a.active::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background-color: var(--blush-pink);
+            bottom: -5px;
+            left: 0;
+        }
+        
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: var(--dusty-lavender);
+            cursor: pointer;
+        }
+        
+        /* Hero Section */
+        .hero {
+            padding: 100px 0 70px;
+            text-align: center;
+            background: linear-gradient(135deg, rgba(255, 251, 255, 0.9) 0%, rgba(247, 243, 240, 0.9) 100%);
+            margin-bottom: 40px;
+            border-bottom: 1px solid rgba(181, 131, 141, 0.1);
+        }
+        
+        .hero h1 {
+            font-size: 3.2rem;
+            margin-bottom: 20px;
+            color: var(--soft-black);
+        }
+        
+        .hero p {
+            font-size: 1.3rem;
+            max-width: 700px;
+            margin: 0 auto 30px;
+            color: var(--dusty-lavender);
+        }
+        
+        .author-name {
+            color: var(--muted-rose);
+            font-weight: 600;
+            font-size: 1.5rem;
+            margin-top: 20px;
+        }
+        
+        /* Divider */
+        .divider {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 40px 0;
+        }
+        
+        .divider-line {
+            height: 1px;
+            background-color: rgba(181, 131, 141, 0.3);
+            width: 100px;
+            margin: 0 15px;
+        }
+        
+        .divider-icon {
+            color: var(--blush-pink);
+            font-size: 1.2rem;
+        }
+        
+        /* Poems List */
+        .poems-section {
+            padding: 60px 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 50px;
+            position: relative;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            width: 80px;
+            height: 2px;
+            background-color: var(--blush-pink);
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        .poems-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+        
+        .poem-card {
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px var(--shadow);
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+        }
+        
+        .poem-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(109, 104, 117, 0.15);
+        }
+        
+        .poem-card-content {
+            padding: 25px;
+        }
+        
+        .poem-card h3 {
+            font-size: 1.6rem;
+            margin-bottom: 10px;
+            color: var(--soft-black);
+        }
+        
+        .poem-date {
+            color: var(--muted-rose);
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+            display: block;
+        }
+        
+        .poem-excerpt {
+            color: var(--dusty-lavender);
+            margin-bottom: 20px;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+        
+        .poem-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+            padding-top: 15px;
+            border-top: 1px solid rgba(109, 104, 117, 0.1);
+        }
+        
+        .poem-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+        }
+        
+        .tag {
+            background-color: rgba(229, 152, 155, 0.1);
+            color: var(--muted-rose);
+            padding: 3px 10px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+        }
+        
+        .comment-count {
+            color: var(--dusty-lavender);
+            font-size: 0.9rem;
+        }
+        
+        /* Individual Poem Page */
+        .poem-detail-section {
+            padding: 60px 0;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .poem-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .poem-title {
+            font-size: 2.8rem;
+            color: var(--soft-black);
+            margin-bottom: 10px;
+        }
+        
+        .poem-meta-detail {
+            color: var(--muted-rose);
+            font-size: 1rem;
+            margin-bottom: 20px;
+        }
+        
+        .poem-content {
+            background-color: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 5px 20px var(--shadow);
+            margin-bottom: 50px;
+            line-height: 1.9;
+        }
+        
+        /* Comments Section */
+        .comments-section {
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 5px 20px var(--shadow);
+        }
+        
+        .comments-title {
+            font-size: 1.8rem;
+            margin-bottom: 25px;
+            color: var(--dusty-lavender);
+        }
+        
+        .comment {
+            padding: 20px 0;
+            border-bottom: 1px solid rgba(109, 104, 117, 0.1);
+        }
+        
+        .comment:last-child {
+            border-bottom: none;
+        }
+        
+        .comment-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+        
+        .comment-author {
+            font-weight: 600;
+            color: var(--muted-rose);
+        }
+        
+        .comment-date {
+            color: var(--dusty-lavender);
+            font-size: 0.9rem;
+        }
+        
+        .comment-body {
+            margin-bottom: 15px;
+            color: var(--soft-black);
+        }
+        
+        .author-reply {
+            background-color: rgba(247, 243, 240, 0.7);
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 10px;
+            border-left: 3px solid var(--blush-pink);
+        }
+        
+        .reply-author {
+            font-weight: 600;
+            color: var(--dusty-lavender);
+            margin-bottom: 5px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .reply-author i {
+            margin-right: 8px;
+            color: var(--blush-pink);
+        }
+        
+        .add-comment {
+            margin-top: 40px;
+        }
+        
+        .add-comment h3 {
+            margin-bottom: 20px;
+            color: var(--dusty-lavender);
+        }
+        
+        /* Admin Section */
+        .admin-section {
+            padding: 80px 0;
+            max-width: 800px;
+            margin: 0 auto;
+            display: none;
+        }
+        
+        .admin-section.active {
+            display: block;
+        }
+        
+        .admin-panel {
+            background-color: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 10px 30px var(--shadow);
+        }
+        
+        .admin-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+        
+        .admin-stats {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .stat-card {
+            flex: 1;
+            background-color: rgba(247, 243, 240, 0.7);
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        
+        .stat-number {
+            font-size: 2rem;
+            font-weight: 600;
+            color: var(--muted-rose);
+            display: block;
+        }
+        
+        .stat-label {
+            color: var(--dusty-lavender);
+            font-size: 0.9rem;
+        }
+        
+        /* Forms */
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: var(--dusty-lavender);
+            font-weight: 500;
+        }
+        
+        input, textarea, select {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid rgba(109, 104, 117, 0.3);
+            border-radius: 5px;
+            font-family: 'Lora', serif;
+            font-size: 1rem;
+            background-color: white;
+            transition: border-color 0.3s;
+        }
+        
+        input:focus, textarea:focus, select:focus {
+            outline: none;
+            border-color: var(--blush-pink);
+        }
+        
+        textarea {
+            min-height: 150px;
+            resize: vertical;
+        }
+        
+        .form-actions {
+            display: flex;
+            gap: 15px;
+            margin-top: 30px;
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: var(--muted-rose);
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 5px;
+            font-family: 'Lora', serif;
+            font-size: 1rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+            text-decoration: none;
+        }
+        
+        .btn:hover {
+            background-color: var(--blush-pink);
+            transform: translateY(-2px);
+        }
+        
+        .btn-secondary {
+            background-color: transparent;
+            color: var(--muted-rose);
+            border: 1px solid var(--muted-rose);
+        }
+        
+        .btn-secondary:hover {
+            background-color: rgba(181, 131, 141, 0.1);
+        }
+        
+        .btn-danger {
+            background-color: #e74c3c;
+        }
+        
+        .btn-danger:hover {
+            background-color: #c0392b;
+        }
+        
+        .btn-success {
+            background-color: #27ae60;
+        }
+        
+        .btn-success:hover {
+            background-color: #219955;
+        }
+        
+        /* Contact Page */
+        .contact-section {
+            padding: 80px 0;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        .contact-intro {
+            text-align: center;
+            margin-bottom: 50px;
+            font-size: 1.2rem;
+            color: var(--dusty-lavender);
+        }
+        
+        .contact-form-container {
+            background-color: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 10px 30px var(--shadow);
+        }
+        
+        /* About Section */
+        .about-section {
+            padding: 80px 0;
+        }
+        
+        .about-container {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+        }
+        
+        .about-image {
+            flex: 1;
+            text-align: center;
+        }
+        
+        .author-avatar {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid white;
+            box-shadow: 0 10px 30px var(--shadow);
+        }
+        
+        .about-content {
+            flex: 2;
+        }
+        
+        .about-content h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: var(--soft-black);
+        }
+        
+        .about-content p {
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--soft-black);
+            color: var(--off-white);
+            padding: 60px 0 30px;
+            margin-top: 80px;
+        }
+        
+        .footer-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-bottom: 40px;
+        }
+        
+        .footer-column {
+            flex: 1;
+            min-width: 250px;
+            margin-bottom: 30px;
+        }
+        
+        .footer-column h3 {
+            color: var(--blush-pink);
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+        }
+        
+        .footer-links {
+            list-style: none;
+        }
+        
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-links a {
+            color: rgba(255, 251, 255, 0.7);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer-links a:hover {
+            color: var(--blush-pink);
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .social-links a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            color: white;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+        
+        .social-links a:hover {
+            background-color: var(--blush-pink);
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 0.9rem;
+        }
+        
+        /* Utility Classes */
+        .text-center {
+            text-align: center;
+        }
+        
+        .mt-30 {
+            margin-top: 30px;
+        }
+        
+        .mb-30 {
+            margin-bottom: 30px;
+        }
+        
+        .hidden {
+            display: none;
+        }
+        
+        .empty-state {
+            text-align: center;
+            padding: 60px 20px;
+            color: var(--dusty-lavender);
+            font-size: 1.2rem;
+            grid-column: 1 / -1;
+        }
+        
+        .empty-state i {
+            font-size: 3rem;
+            color: var(--blush-pink);
+            margin-bottom: 20px;
+            display: block;
+        }
+        
+        /* Back to Top Button */
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 50px;
+            height: 50px;
+            background-color: var(--muted-rose);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 1.2rem;
+            box-shadow: 0 5px 15px rgba(109, 104, 117, 0.3);
+            z-index: 100;
+            opacity: 0;
+            transition: opacity 0.3s, transform 0.3s;
+        }
+        
+        .back-to-top.visible {
+            opacity: 1;
+        }
+        
+        .back-to-top:hover {
+            background-color: var(--blush-pink);
+            transform: translateY(-3px);
+        }
+        
+        /* Notifications */
+        .notification {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            padding: 15px 25px;
+            background-color: var(--muted-rose);
+            color: white;
+            border-radius: 5px;
+            box-shadow: 0 5px 15px rgba(109, 104, 117, 0.3);
+            z-index: 1000;
+            transform: translateX(150%);
+            transition: transform 0.3s;
+        }
+        
+        .notification.show {
+            transform: translateX(0);
+        }
+        
+        .notification.success {
+            background-color: #27ae60;
+        }
+        
+        .notification.error {
+            background-color: #e74c3c;
+        }
+        
+        /* Modal */
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 2000;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s, visibility 0.3s;
+        }
+        
+        .modal-overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        .modal-content {
+            background-color: white;
+            padding: 40px;
+            border-radius: 8px;
+            max-width: 500px;
+            width: 90%;
+            max-height: 80vh;
+            overflow-y: auto;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 992px) {
+            .about-container {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .admin-stats {
+                flex-direction: column;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .header-container {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            
+            .logo {
+                margin-bottom: 15px;
+            }
+            
+            nav {
+                width: 100%;
+            }
+            
+            nav ul {
+                flex-direction: column;
+                display: none;
+            }
+            
+            nav ul.active {
+                display: flex;
+            }
+            
+            nav li {
+                margin: 10px 0;
+            }
+            
+            .mobile-menu-btn {
+                display: block;
+                position: absolute;
+                top: 20px;
+                right: 20px;
+            }
+            
+            .hero {
+                padding: 80px 0 50px;
+            }
+            
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+            
+            .poem-title {
+                font-size: 2.2rem;
+            }
+            
+            .poem-content {
+                padding: 25px;
+            }
+            
+            .admin-panel {
+                padding: 25px;
+            }
+            
+            .form-actions {
+                flex-direction: column;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .poems-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .contact-form-container {
+                padding: 25px;
+            }
+            
+            .footer-column {
+                min-width: 100%;
+            }
+            
+            .modal-content {
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <a href="#home" class="logo">
+                <i class="fas fa-feather-alt"></i>
+                S.B. Poems
+            </a>
+            
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <nav>
+                <ul id="mainNav">
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#poems">Poems</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#admin" id="adminNavLink">Admin</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <h1>Sanctuary of Words</h1>
+            <p>A collection of poems that explore the depths of emotion, the beauty of nature, and the complexity of the human experience.</p>
+            
+            <div class="divider">
+                <div class="divider-line"></div>
+                <i class="fas fa-heart divider-icon"></i>
+                <div class="divider-line"></div>
+            </div>
+            
+            <p class="author-name">by Sidhi Batra</p>
+            
+            <div class="mt-30">
+                <button class="btn" id="publishNewBtn">
+                    <i class="fas fa-plus"></i> Publish New Poem
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Poems List Section -->
+    <section class="poems-section" id="poems">
+        <div class="container">
+            <h2 class="section-title">My Poems</h2>
+            
+            <div class="poems-grid" id="poemsGrid">
+                <!-- Poems will be loaded here by JavaScript -->
+            </div>
+            
+            <div class="text-center">
+                <button class="btn" id="loadMoreBtn" style="display: none;">Load More Poems</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <h2 class="section-title">About the Author</h2>
+            
+            <div class="about-container">
+                <div class="about-image">
+                    <div class="author-avatar" style="background-color: var(--light-beige); display: flex; align-items: center; justify-content: center; font-size: 4rem; color: var(--muted-rose);">
+                        SB
+                    </div>
+                </div>
+                
+                <div class="about-content">
+                    <h2>Sidhi Batra</h2>
+                    <p>Welcome to my personal sanctuary of words. I'm Sidhi, a poet who finds solace in weaving emotions into verses. This space is my refuge—a place where I can share my innermost thoughts through poetry.</p>
+                    <p>My poems explore themes of love, loss, nature, and self-discovery. Each piece is a fragment of my journey, an attempt to capture the ephemeral moments that define our human experience.</p>
+                    <p>This website is my safe space—a digital home for my poetry where I can connect with readers who find meaning in my words. I welcome your thoughts and reflections in the comments, and I'll do my best to respond to each one.</p>
+                    <p>Thank you for visiting and sharing this space with me.</p>
+                    
+                    <div class="mt-30">
+                        <a href="#contact" class="btn">Get in Touch</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Admin Section -->
+    <section class="admin-section" id="admin">
+        <div class="container">
+            <div class="admin-panel">
+                <div class="admin-header">
+                    <h2>Admin Panel</h2>
+                    <button class="btn btn-secondary" id="closeAdminBtn">
+                        <i class="fas fa-times"></i> Close Admin
+                    </button>
+                </div>
+                
+                <div class="admin-stats">
+                    <div class="stat-card">
+                        <span class="stat-number" id="totalPoemsStat">0</span>
+                        <span class="stat-label">Total Poems</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number" id="totalCommentsStat">0</span>
+                        <span class="stat-label">Total Comments</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number" id="totalViewsStat">0</span>
+                        <span class="stat-label">Total Views</span>
+                    </div>
+                </div>
+                
+                <div class="text-center mb-30">
+                    <button class="btn btn-success" id="addPoemBtn">
+                        <i class="fas fa-plus"></i> Add New Poem
+                    </button>
+                    <button class="btn btn-secondary" id="exportDataBtn">
+                        <i class="fas fa-download"></i> Export Data
+                    </button>
+                    <button class="btn btn-secondary" id="importDataBtn">
+                        <i class="fas fa-upload"></i> Import Data
+                    </button>
+                </div>
+                
+                <div id="poemListContainer">
+                    <!-- List of existing poems for management -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <h2 class="section-title">Contact Author</h2>
+            
+            <p class="contact-intro">I appreciate all genuine messages and try to respond within 3-4 days. Please feel free to reach out with your thoughts, questions, or collaboration ideas.</p>
+            
+            <div class="contact-form-container">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <select id="subject" name="subject" required>
+                            <option value="" disabled selected>Select a subject</option>
+                            <option value="feedback">Feedback on Poems</option>
+                            <option value="collaboration">Collaboration Inquiry</option>
+                            <option value="general">General Query</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <button type="submit" class="btn">Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-column">
+                    <h3>S.B. Poems</h3>
+                    <p>A sanctuary of words by Sidhi Batra. A safe space for poetry and reflection.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#poems">All Poems</a></li>
+                        <li><a href="#about">About Author</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Poem Categories</h3>
+                    <ul class="footer-links">
+                        <li><a href="#" data-tag="love">Love Poems</a></li>
+                        <li><a href="#" data-tag="nature">Nature Poems</a></li>
+                        <li><a href="#" data-tag="life">Life Reflections</a></li>
+                        <li><a href="#" data-tag="melancholy">Melancholy Verses</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; <span id="currentYear"></span> S.B. Poems. All rights reserved. | Created with ❤️ by Sidhi Batra</p>
+                <p style="font-size: 0.8rem; margin-top: 10px;">All poems are saved in your browser's local storage</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+
+    <!-- Notification -->
+    <div class="notification" id="notification">
+        <span id="notificationText"></span>
+    </div>
+
+    <!-- Poem Detail Modal -->
+    <div class="modal-overlay" id="poemModal">
+        <div class="modal-content">
+            <div class="poem-detail-section">
+                <div class="poem-header">
+                    <h2 class="poem-title" id="modalPoemTitle"></h2>
+                    <p class="poem-meta-detail">
+                        Published on <span id="modalPoemDate"></span> | 
+                        <span id="modalPoemReadTime"></span> min read
+                    </p>
+                </div>
+                
+                <div class="poem-content">
+                    <div class="poem-text" id="modalPoemContent"></div>
+                </div>
+                
+                <div class="comments-section">
+                    <h3 class="comments-title">Comments</h3>
+                    <div id="commentsContainer">
+                        <!-- Comments will be loaded here -->
+                    </div>
+                    
+                    <div class="add-comment">
+                        <h3>Add a Comment</h3>
+                        <form id="commentForm">
+                            <div class="form-group">
+                                <label for="commentName">Your Name</label>
+                                <input type="text" id="commentName" name="commentName" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="commentText">Your Comment</label>
+                                <textarea id="commentText" name="commentText" required></textarea>
+                            </div>
+                            
+                            <div class="form-actions">
+                                <button type="submit" class="btn">Post Comment</button>
+                                <button type="button" class="btn btn-secondary" id="closeModalBtn">Close</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add/Edit Poem Modal -->
+    <div class="modal-overlay" id="poemFormModal">
+        <div class="modal-content">
+            <div class="admin-panel">
+                <div class="admin-header">
+                    <h2 id="poemFormTitle">Add New Poem</h2>
+                    <button class="btn btn-secondary" id="closePoemFormBtn">
+                        <i class="fas fa-times"></i> Close
+                    </button>
+                </div>
+                
+                <form id="poemForm">
+                    <input type="hidden" id="poemId" value="">
+                    
+                    <div class="form-group">
+                        <label for="poemTitle">Poem Title *</label>
+                        <input type="text" id="poemTitle" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="poemDate">Publication Date *</label>
+                        <input type="date" id="poemDate" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="poemContent">Poem Content * (Use line breaks for stanzas)</label>
+                        <textarea id="poemContent" rows="10" required></textarea>
+                        <small style="color: var(--dusty-lavender);">Tip: Write exactly as you want it to appear, with line breaks between stanzas.</small>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="poemExcerpt">Excerpt * (First few lines for preview)</label>
+                        <textarea id="poemExcerpt" rows="3" required></textarea>
+                        <small style="color: var(--dusty-lavender);">Usually the first 2-3 lines of your poem.</small>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="poemTags">Tags (comma separated) *</label>
+                        <input type="text" id="poemTags" placeholder="love, nature, life" required>
+                        <small style="color: var(--dusty-lavender);">Example: love, nature, life, melancholy, hope</small>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="poemReadTime">Reading Time (minutes) *</label>
+                        <input type="number" id="poemReadTime" min="1" max="10" value="2" required>
+                    </div>
+                    
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-success" id="savePoemBtn">Publish Poem</button>
+                        <button type="button" class="btn btn-secondary" id="cancelPoemBtn">Cancel</button>
+                        <button type="button" class="btn btn-danger" id="deletePoemBtn" style="display: none;">Delete Poem</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // =============================================
+        // DATA STORAGE SYSTEM
+        // =============================================
+        
+        // Initialize poems array from localStorage or create empty
+        let poems = JSON.parse(localStorage.getItem('sb_poems')) || [];
+        
+        // Initialize stats
+        let stats = JSON.parse(localStorage.getItem('sb_stats')) || {
+            totalViews: 0,
+            lastExport: null
+        };
+        
+        // Initialize admin password
+        const ADMIN_PASSWORD = "SidhiPoems2024";
+        
+        // Track if user is authenticated
+        let isAuthenticated = false;
+        
+        // =============================================
+        // DOM Elements
+        // =============================================
+        const poemsGrid = document.getElementById('poemsGrid');
+        const loadMoreBtn = document.getElementById('loadMoreBtn');
+        const poemModal = document.getElementById('poemModal');
+        const modalPoemTitle = document.getElementById('modalPoemTitle');
+        const modalPoemDate = document.getElementById('modalPoemDate');
+        const modalPoemReadTime = document.getElementById('modalPoemReadTime');
+        const modalPoemContent = document.getElementById('modalPoemContent');
+        const commentsContainer = document.getElementById('commentsContainer');
+        const commentForm = document.getElementById('commentForm');
+        const contactForm = document.getElementById('contactForm');
+        const closeModalBtn = document.getElementById('closeModalBtn');
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mainNav = document.getElementById('mainNav');
+        const backToTop = document.getElementById('backToTop');
+        const currentYear = document.getElementById('currentYear');
+        const notification = document.getElementById('notification');
+        const notificationText = document.getElementById('notificationText');
+        const adminSection = document.getElementById('admin');
+        const adminNavLink = document.getElementById('adminNavLink');
+        const closeAdminBtn = document.getElementById('closeAdminBtn');
+        const publishNewBtn = document.getElementById('publishNewBtn');
+        const addPoemBtn = document.getElementById('addPoemBtn');
+        const exportDataBtn = document.getElementById('exportDataBtn');
+        const importDataBtn = document.getElementById('importDataBtn');
+        const poemFormModal = document.getElementById('poemFormModal');
+        const closePoemFormBtn = document.getElementById('closePoemFormBtn');
+        const cancelPoemBtn = document.getElementById('cancelPoemBtn');
+        const poemForm = document.getElementById('poemForm');
+        const poemFormTitle = document.getElementById('poemFormTitle');
+        const poemIdInput = document.getElementById('poemId');
+        const poemTitleInput = document.getElementById('poemTitle');
+        const poemDateInput = document.getElementById('poemDate');
+        const poemContentInput = document.getElementById('poemContent');
+        const poemExcerptInput = document.getElementById('poemExcerpt');
+        const poemTagsInput = document.getElementById('poemTags');
+        const poemReadTimeInput = document.getElementById('poemReadTime');
+        const savePoemBtn = document.getElementById('savePoemBtn');
+        const deletePoemBtn = document.getElementById('deletePoemBtn');
+        const totalPoemsStat = document.getElementById('totalPoemsStat');
+        const totalCommentsStat = document.getElementById('totalCommentsStat');
+        const totalViewsStat = document.getElementById('totalViewsStat');
+        const poemListContainer = document.getElementById('poemListContainer');
+
+        // Current poem being viewed
+        let currentPoemId = null;
+        let displayedPoems = 6;
+        let isEditing = false;
+
+        // Initialize the website
+        document.addEventListener('DOMContentLoaded', function() {
+            // Set current year in footer
+            currentYear.textContent = new Date().getFullYear();
+            
+            // Set default date to today
+            poemDateInput.valueAsDate = new Date();
+            
+            // Load poems
+            renderPoems();
+            
+            // Update stats
+            updateStats();
+            
+            // Set up event listeners
+            setupEventListeners();
+            
+            // Smooth scrolling for anchor links
+            setupSmoothScrolling();
+            
+            // Set up back to top button
+            setupBackToTop();
+            
+            // Check if coming back from authentication
+            checkAuth();
+        });
+
+        // Render poems to the grid
+        function renderPoems() {
+            poemsGrid.innerHTML = '';
+            
+            // If no poems, show empty state
+            if (poems.length === 0) {
+                poemsGrid.innerHTML = `
+                    <div class="empty-state">
+                        <i class="fas fa-feather"></i>
+                        <h3>Your Poetry Sanctuary Awaits</h3>
+                        <p>No poems published yet. Click the "Publish New Poem" button above to add your first poem!</p>
+                        <p>Your poems will be saved in your browser and visible to anyone who visits this site.</p>
+                    </div>
+                `;
+                loadMoreBtn.style.display = 'none';
+                return;
+            }
+            
+            // Sort poems by date (newest first)
+            const sortedPoems = [...poems].sort((a, b) => {
+                return new Date(b.date) - new Date(a.date);
+            });
+            
+            for (let i = 0; i < Math.min(displayedPoems, sortedPoems.length); i++) {
+                const poem = sortedPoems[i];
+                const poemCard = document.createElement('div');
+                poemCard.className = 'poem-card';
+                poemCard.setAttribute('data-id', poem.id);
+                
+                poemCard.innerHTML = `
+                    <div class="poem-card-content">
+                        <h3>${poem.title}</h3>
+                        <span class="poem-date">${formatDate(poem.date)}</span>
+                        <p class="poem-excerpt">${poem.excerpt}</p>
+                        
+                        <div class="poem-meta">
+                            <div class="poem-tags">
+                                ${poem.tags.map(tag => `<span class="tag">${tag}</span>`).join('')}
+                            </div>
+                            <div class="comment-count">
+                                <i class="far fa-comment"></i> ${poem.comments.length}
+                            </div>
+                        </div>
+                    </div>
+                `;
+                
+                poemsGrid.appendChild(poemCard);
+            }
+            
+            // Hide load more button if all poems are displayed
+            if (displayedPoems >= sortedPoems.length) {
+                loadMoreBtn.style.display = 'none';
+            } else {
+                loadMoreBtn.style.display = 'inline-block';
+            }
+        }
+
+        // Format date for display
+        function formatDate(dateString) {
+            const date = new Date(dateString);
+            return date.toLocaleDateString('en-US', { 
+                year: 'numeric', 
+                month: 'long', 
+                day: 'numeric' 
+            });
+        }
+
+        // Update statistics
+        function updateStats() {
+            const totalComments = poems.reduce((sum, poem) => sum + poem.comments.length, 0);
+            
+            totalPoemsStat.textContent = poems.length;
+            totalCommentsStat.textContent = totalComments;
+            totalViewsStat.textContent = stats.totalViews;
+            
+            // Update admin poem list
+            updatePoemList();
+        }
+
+        // Update admin poem list
+        function updatePoemList() {
+            poemListContainer.innerHTML = '';
+            
+            if (poems.length === 0) {
+                poemListContainer.innerHTML = '<p class="text-center">No poems yet. Add your first poem!</p>';
+                return;
+            }
+            
+            const listHeader = document.createElement('div');
+            listHeader.innerHTML = '<h3>Manage Poems</h3><p>Click on a poem to edit or delete it.</p>';
+            poemListContainer.appendChild(listHeader);
+            
+            // Sort poems by date (newest first)
+            const sortedPoems = [...poems].sort((a, b) => {
+                return new Date(b.date) - new Date(a.date);
+            });
+            
+            sortedPoems.forEach(poem => {
+                const poemItem = document.createElement('div');
+                poemItem.className = 'poem-card';
+                poemItem.style.marginBottom = '15px';
+                poemItem.setAttribute('data-id', poem.id);
+                
+                poemItem.innerHTML = `
+                    <div class="poem-card-content">
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <div>
+                                <h4 style="margin-bottom: 5px;">${poem.title}</h4>
+                                <small style="color: var(--dusty-lavender);">${formatDate(poem.date)} | ${poem.comments.length} comments</small>
+                            </div>
+                            <div>
+                                <button class="btn btn-secondary" style="padding: 5px 10px; margin-right: 5px;" onclick="editPoem(${poem.id})">
+                                    <i class="fas fa-edit"></i>
+                                </button>
+                                <button class="btn btn-danger" style="padding: 5px 10px;" onclick="deletePoem(${poem.id})">
+                                    <i class="fas fa-trash"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                `;
+                
+                poemListContainer.appendChild(poemItem);
+            });
+        }
+
+        // Set up all event listeners
+        function setupEventListeners() {
+            // Load more poems button
+            loadMoreBtn.addEventListener('click', function() {
+                displayedPoems += 6;
+                renderPoems();
+            });
+            
+            // Poem card click to open modal
+            poemsGrid.addEventListener('click', function(e) {
+                const poemCard = e.target.closest('.poem-card');
+                if (poemCard) {
+                    const poemId = parseInt(poemCard.getAttribute('data-id'));
+                    openPoemModal(poemId);
+                }
+            });
+            
+            // Close modal button
+            closeModalBtn.addEventListener('click', closePoemModal);
+            
+            // Close modal when clicking outside content
+            poemModal.addEventListener('click', function(e) {
+                if (e.target === poemModal) {
+                    closePoemModal();
+                }
+            });
+            
+            // Comment form submission
+            commentForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                addComment();
+            });
+            
+            // Contact form submission
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                submitContactForm();
+            });
+            
+            // Mobile menu toggle
+            mobileMenuBtn.addEventListener('click', function() {
+                mainNav.classList.toggle('active');
+                const icon = mobileMenuBtn.querySelector('i');
+                if (mainNav.classList.contains('active')) {
+                    icon.classList.remove('fa-bars');
+                    icon.classList.add('fa-times');
+                } else {
+                    icon.classList.remove('fa-times');
+                    icon.classList.add('fa-bars');
+                }
+            });
+            
+            // Close mobile menu when clicking a link
+            const navLinks = document.querySelectorAll('nav a');
+            navLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    if (mainNav.classList.contains('active')) {
+                        mainNav.classList.remove('active');
+                        const icon = mobileMenuBtn.querySelector('i');
+                        icon.classList.remove('fa-times');
+                        icon.classList.add('fa-bars');
+                    }
+                });
+            });
+            
+            // Filter poems by tag
+            const tagLinks = document.querySelectorAll('[data-tag]');
+            tagLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const tag = this.getAttribute('data-tag');
+                    filterPoemsByTag(tag);
+                });
+            });
+            
+            // Admin navigation
+            adminNavLink.addEventListener('click', function(e) {
+                e.preventDefault();
+                authenticateAdmin();
+            });
+            
+            // Close admin panel
+            closeAdminBtn.addEventListener('click', function() {
+                adminSection.classList.remove('active');
+                updateActiveNav('#home');
+            });
+            
+            // Publish new poem button
+            publishNewBtn.addEventListener('click', function() {
+                openPoemForm();
+            });
+            
+            // Add poem button in admin
+            addPoemBtn.addEventListener('click', openPoemForm);
+            
+            // Export data button
+            exportDataBtn.addEventListener('click', exportData);
+            
+            // Import data button
+            importDataBtn.addEventListener('click', importData);
+            
+            // Close poem form modal
+            closePoemFormBtn.addEventListener('click', closePoemForm);
+            cancelPoemBtn.addEventListener('click', closePoemForm);
+            
+            // Poem form submission
+            poemForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                savePoem();
+            });
+            
+            // Delete poem button
+            deletePoemBtn.addEventListener('click', function() {
+                if (confirm('Are you sure you want to delete this poem? This cannot be undone.')) {
+                    deleteCurrentPoem();
+                }
+            });
+        }
+
+        // Authenticate admin
+        function authenticateAdmin() {
+            if (isAuthenticated) {
+                showAdminPanel();
+                return;
+            }
+            
+            const password = prompt('Enter admin password:');
+            if (password === ADMIN_PASSWORD) {
+                isAuthenticated = true;
+                showAdminPanel();
+                showNotification('Admin access granted', 'success');
+            } else if (password !== null) {
+                alert('Incorrect password');
+            }
+        }
+
+        // Check if already authenticated
+        function checkAuth() {
+            const auth = localStorage.getItem('sb_auth');
+            if (auth && auth === ADMIN_PASSWORD) {
+                isAuthenticated = true;
+            }
+        }
+
+        // Show admin panel
+        function showAdminPanel() {
+            // Hide all sections
+            document.querySelectorAll('section').forEach(section => {
+                section.classList.remove('active');
+            });
+            
+            // Show admin section
+            adminSection.classList.add('active');
+            
+            // Update active nav
+            updateActiveNav('#admin');
+            
+            // Update stats
+            updateStats();
+            
+            // Store authentication
+            localStorage.setItem('sb_auth', ADMIN_PASSWORD);
+        }
+
+        // Update active navigation
+        function updateActiveNav(hash) {
+            document.querySelectorAll('nav a').forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === hash) {
+                    link.classList.add('active');
+                }
+            });
+        }
+
+        // Open poem modal with details
+        function openPoemModal(poemId) {
+            const poem = poems.find(p => p.id === poemId);
+            if (!poem) return;
+            
+            currentPoemId = poemId;
+            
+            // Increment views
+            stats.totalViews++;
+            localStorage.setItem('sb_stats', JSON.stringify(stats));
+            updateStats();
+            
+            // Set poem details
+            modalPoemTitle.textContent = poem.title;
+            modalPoemDate.textContent = formatDate(poem.date);
+            modalPoemReadTime.textContent = poem.readTime;
+            modalPoemContent.textContent = poem.content;
+            
+            // Render comments
+            renderComments(poem.comments);
+            
+            // Clear comment form
+            commentForm.reset();
+            
+            // Show modal
+            poemModal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+            
+            // Update URL without page reload
+            history.pushState({ poemId: poemId }, '', `#poem-${poemId}`);
+        }
+
+        // Close poem modal
+        function closePoemModal() {
+            poemModal.classList.remove('active');
+            document.body.style.overflow = 'auto';
+            
+            // Update URL
+            if (window.location.hash.includes('poem-')) {
+                history.pushState(null, '', window.location.pathname);
+            }
+        }
+
+        // Open poem form for adding/editing
+        function openPoemForm(poemId = null) {
+            if (poemId) {
+                // Editing existing poem
+                const poem = poems.find(p => p.id === poemId);
+                if (poem) {
+                    isEditing = true;
+                    poemFormTitle.textContent = 'Edit Poem';
+                    savePoemBtn.textContent = 'Update Poem';
+                    deletePoemBtn.style.display = 'inline-block';
+                    
+                    poemIdInput.value = poem.id;
+                    poemTitleInput.value = poem.title;
+                    poemDateInput.value = poem.date;
+                    poemContentInput.value = poem.content;
+                    poemExcerptInput.value = poem.excerpt;
+                    poemTagsInput.value = poem.tags.join(', ');
+                    poemReadTimeInput.value = poem.readTime;
+                }
+            } else {
+                // Adding new poem
+                isEditing = false;
+                poemFormTitle.textContent = 'Add New Poem';
+                savePoemBtn.textContent = 'Publish Poem';
+                deletePoemBtn.style.display = 'none';
+                
+                // Reset form
+                poemForm.reset();
+                poemIdInput.value = '';
+                poemDateInput.valueAsDate = new Date();
+                poemReadTimeInput.value = 2;
+            }
+            
+            // Show modal
+            poemFormModal.classList.add('active');
+        }
+
+        // Close poem form
+        function closePoemForm() {
+            poemFormModal.classList.remove('active');
+        }
+
+        // Save poem (add or update)
+        function savePoem() {
+            // Get form values
+            const id = poemIdInput.value ? parseInt(poemIdInput.value) : generateId();
+            const title = poemTitleInput.value.trim();
+            const date = poemDateInput.value;
+            const content = poemContentInput.value.trim();
+            const excerpt = poemExcerptInput.value.trim();
+            const tags = poemTagsInput.value.split(',').map(tag => tag.trim()).filter(tag => tag);
+            const readTime = parseInt(poemReadTimeInput.value) || 2;
+            
+            // Validate
+            if (!title || !content || !excerpt || tags.length === 0) {
+                showNotification('Please fill in all required fields', 'error');
+                return;
+            }
+            
+            // Create poem object
+            const poem = {
+                id,
+                title,
+                date,
+                content,
+                excerpt,
+                tags,
+                readTime,
+                comments: []
+            };
+            
+            if (isEditing) {
+                // Update existing poem
+                const index = poems.findIndex(p => p.id === id);
+                if (index !== -1) {
+                    // Keep existing comments
+                    poem.comments = poems[index].comments;
+                    poems[index] = poem;
+                    showNotification('Poem updated successfully', 'success');
+                }
+            } else {
+                // Add new poem
+                poems.push(poem);
+                showNotification('Poem published successfully', 'success');
+            }
+            
+            // Save to localStorage
+            localStorage.setItem('sb_poems', JSON.stringify(poems));
+            
+            // Update display
+            renderPoems();
+            updateStats();
+            
+            // Close form
+            closePoemForm();
+        }
+
+        // Edit poem
+        window.editPoem = function(poemId) {
+            openPoemForm(poemId);
+        };
+
+        // Delete poem
+        window.deletePoem = function(poemId) {
+            if (confirm('Are you sure you want to delete this poem? This cannot be undone.')) {
+                poems = poems.filter(p => p.id !== poemId);
+                localStorage.setItem('sb_poems', JSON.stringify(poems));
+                renderPoems();
+                updateStats();
+                showNotification('Poem deleted successfully', 'success');
+            }
+        };
+
+        // Delete current poem (from form)
+        function deleteCurrentPoem() {
+            const poemId = parseInt(poemIdInput.value);
+            if (poemId) {
+                deletePoem(poemId);
+                closePoemForm();
+            }
+        }
+
+        // Generate unique ID for new poem
+        function generateId() {
+            return poems.length > 0 ? Math.max(...poems.map(p => p.id)) + 1 : 1;
+        }
+
+        // Export data
+        function exportData() {
+            const data = {
+                poems: poems,
+                stats: stats,
+                exportedAt: new Date().toISOString()
+            };
+            
+            const dataStr = JSON.stringify(data, null, 2);
+            const dataUri = 'data:application/json;charset=utf-8,'+ encodeURIComponent(dataStr);
+            
+            const exportFileDefaultName = `sb-poems-backup-${new Date().toISOString().split('T')[0]}.json`;
+            
+            const linkElement = document.createElement('a');
+            linkElement.setAttribute('href', dataUri);
+            linkElement.setAttribute('download', exportFileDefaultName);
+            linkElement.click();
+            
+            showNotification('Data exported successfully', 'success');
+        }
+
+        // Import data
+        function importData() {
+            const input = document.createElement('input');
+            input.type = 'file';
+            input.accept = '.json';
+            
+            input.onchange = function(e) {
+                const file = e.target.files[0];
+                if (!file) return;
+                
+                const reader = new FileReader();
+                reader.onload = function(event) {
+                    try {
+                        const data = JSON.parse(event.target.result);
+                        
+                        if (confirm('Importing data will replace all current poems. Are you sure?')) {
+                            if (data.poems) {
+                                poems = data.poems;
+                                localStorage.setItem('sb_poems', JSON.stringify(poems));
+                            }
+                            
+                            if (data.stats) {
+                                stats = data.stats;
+                                localStorage.setItem('sb_stats', JSON.stringify(stats));
+                            }
+                            
+                            renderPoems();
+                            updateStats();
+                            showNotification('Data imported successfully', 'success');
+                        }
+                    } catch (error) {
+                        showNotification('Error importing data. Invalid file format.', 'error');
+                    }
+                };
+                
+                reader.readAsText(file);
+            };
+            
+            input.click();
+        }
+
+        // Render comments for a poem
+        function renderComments(comments) {
+            commentsContainer.innerHTML = '';
+            
+            if (comments.length === 0) {
+                commentsContainer.innerHTML = '<p>No comments yet. Be the first to share your thoughts!</p>';
+                return;
+            }
+            
+            comments.forEach(comment => {
+                const commentElement = document.createElement('div');
+                commentElement.className = 'comment';
+                
+                commentElement.innerHTML = `
+                    <div class="comment-header">
+                        <span class="comment-author">${comment.author}</span>
+                        <span class="comment-date">${formatDate(comment.date)}</span>
+                    </div>
+                    <div class="comment-body">${comment.text}</div>
+                    ${comment.reply ? `
+                    <div class="author-reply">
+                        <div class="reply-author"><i class="fas fa-reply"></i> Sidhi Batra</div>
+                        <div>${comment.reply}</div>
+                    </div>
+                    ` : ''}
+                    ${isAuthenticated && !comment.reply ? `
+                    <button class="btn btn-secondary" style="padding: 5px 10px; margin-top: 10px; font-size: 0.9rem;" onclick="replyToComment(${comment.id})">
+                        <i class="fas fa-reply"></i> Reply
+                    </button>
+                    ` : ''}
+                `;
+                
+                commentsContainer.appendChild(commentElement);
+            });
+        }
+
+        // Add a new comment
+        function addComment() {
+            const nameInput = document.getElementById('commentName');
+            const textInput = document.getElementById('commentText');
+            
+            const name = nameInput.value.trim();
+            const text = textInput.value.trim();
+            
+            if (!name || !text) {
+                showNotification('Please fill in both your name and comment.', 'error');
+                return;
+            }
+            
+            // Find current poem
+            const poemIndex = poems.findIndex(p => p.id === currentPoemId);
+            if (poemIndex === -1) return;
+            
+            // Add comment to poem
+            const newComment = {
+                id: poems[poemIndex].comments.length + 1,
+                author: name,
+                date: new Date().toISOString().split('T')[0],
+                text: text
+            };
+            
+            poems[poemIndex].comments.push(newComment);
+            
+            // Save to localStorage
+            localStorage.setItem('sb_poems', JSON.stringify(poems));
+            
+            // Re-render comments
+            renderComments(poems[poemIndex].comments);
+            
+            // Clear form
+            commentForm.reset();
+            
+            // Update comment count on poem card
+            updatePoemCardCommentCount(poems[poemIndex].id, poems[poemIndex].comments.length);
+            
+            // Update stats
+            updateStats();
+            
+            // Show success message
+            showNotification('Thank you for your comment!', 'success');
+        }
+
+        // Reply to a comment
+        window.replyToComment = function(commentId) {
+            const reply = prompt('Enter your reply:');
+            if (reply && reply.trim()) {
+                const poemIndex = poems.findIndex(p => p.id === currentPoemId);
+                if (poemIndex !== -1) {
+                    const commentIndex = poems[poemIndex].comments.findIndex(c => c.id === commentId);
+                    if (commentIndex !== -1) {
+                        poems[poemIndex].comments[commentIndex].reply = reply.trim();
+                        localStorage.setItem('sb_poems', JSON.stringify(poems));
+                        renderComments(poems[poemIndex].comments);
+                        showNotification('Reply added successfully', 'success');
+                    }
+                }
+            }
+        };
+
+        // Update comment count on poem card
+        function updatePoemCardCommentCount(poemId, count) {
+            const poemCard = document.querySelector(`.poem-card[data-id="${poemId}"]`);
+            if (poemCard) {
+                const commentCountElement = poemCard.querySelector('.comment-count');
+                if (commentCountElement) {
+                    commentCountElement.innerHTML = `<i class="far fa-comment"></i> ${count}`;
+                }
+            }
+        }
+
+        // Submit contact form
+        function submitContactForm() {
+            const name = document.getElementById('name').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const subject = document.getElementById('subject').value;
+            const message = document.getElementById('message').value.trim();
+            
+            if (!name || !email || !subject || !message) {
+                showNotification('Please fill in all fields.', 'error');
+                return;
+            }
+            
+            // In a real application, this would send data to a server
+            // For this demo, we'll just show a success message
+            showNotification(`Thank you, ${name}! Your message has been sent. I'll try to respond within 3-4 days.`, 'success');
+            
+            // Reset form
+            contactForm.reset();
+        }
+
+        // Filter poems by tag
+        function filterPoemsByTag(tag) {
+            displayedPoems = 6; // Reset to initial count
+            
+            // Update active nav link
+            const navLinks = document.querySelectorAll('nav a');
+            navLinks.forEach(link => link.classList.remove('active'));
+            
+            // Highlight Poems link since we're filtering poems
+            document.querySelector('nav a[href="#poems"]').classList.add('active');
+            
+            // Scroll to poems section
+            document.getElementById('poems').scrollIntoView({ behavior: 'smooth' });
+            
+            // If tag is empty, show all poems
+            if (!tag) {
+                renderPoems();
+                return;
+            }
+            
+            // Filter poems by tag
+            const filteredPoems = poems.filter(poem => poem.tags.includes(tag));
+            
+            // Render filtered poems
+            poemsGrid.innerHTML = '';
+            
+            if (filteredPoems.length === 0) {
+                poemsGrid.innerHTML = `<div class="empty-state">
+                    <i class="fas fa-tag"></i>
+                    <h3>No Poems Found</h3>
+                    <p>No poems found with tag "${tag}".</p>
+                    <button class="btn btn-secondary mt-30" onclick="filterPoemsByTag()">Show All Poems</button>
+                </div>`;
+                loadMoreBtn.style.display = 'none';
+                return;
+            }
+            
+            for (let i = 0; i < Math.min(displayedPoems, filteredPoems.length); i++) {
+                const poem = filteredPoems[i];
+                const poemCard = document.createElement('div');
+                poemCard.className = 'poem-card';
+                poemCard.setAttribute('data-id', poem.id);
+                
+                poemCard.innerHTML = `
+                    <div class="poem-card-content">
+                        <h3>${poem.title}</h3>
+                        <span class="poem-date">${formatDate(poem.date)}</span>
+                        <p class="poem-excerpt">${poem.excerpt}</p>
+                        
+                        <div class="poem-meta">
+                            <div class="poem-tags">
+                                ${poem.tags.map(t => `<span class="tag">${t}</span>`).join('')}
+                            </div>
+                            <div class="comment-count">
+                                <i class="far fa-comment"></i> ${poem.comments.length}
+                            </div>
+                        </div>
+                    </div>
+                `;
+                
+                poemsGrid.appendChild(poemCard);
+            }
+            
+            // Update load more button
+            if (displayedPoems >= filteredPoems.length) {
+                loadMoreBtn.style.display = 'none';
+            } else {
+                loadMoreBtn.style.display = 'inline-block';
+                // Update load more button to load more filtered poems
+                const originalClick = loadMoreBtn.onclick;
+                loadMoreBtn.onclick = function() {
+                    displayedPoems += 6;
+                    
+                    // Add more poems from filtered list
+                    for (let i = displayedPoems - 6; i < Math.min(displayedPoems, filteredPoems.length); i++) {
+                        const poem = filteredPoems[i];
+                        const poemCard = document.createElement('div');
+                        poemCard.className = 'poem-card';
+                        poemCard.setAttribute('data-id', poem.id);
+                        
+                        poemCard.innerHTML = `
+                            <div class="poem-card-content">
+                                <h3>${poem.title}</h3>
+                                <span class="poem-date">${formatDate(poem.date)}</span>
+                                <p class="poem-excerpt">${poem.excerpt}</p>
+                                
+                                <div class="poem-meta">
+                                    <div class="poem-tags">
+                                        ${poem.tags.map(t => `<span class="tag">${t}</span>`).join('')}
+                                    </div>
+                                    <div class="comment-count">
+                                        <i class="far fa-comment"></i> ${poem.comments.length}
+                                    </div>
+                                </div>
+                            </div>
+                        `;
+                        
+                        poemsGrid.appendChild(poemCard);
+                    }
+                    
+                    if (displayedPoems >= filteredPoems.length) {
+                        loadMoreBtn.style.display = 'none';
+                    }
+                };
+            }
+        }
+
+        // Show notification
+        function showNotification(message, type = 'success') {
+            notificationText.textContent = message;
+            notification.className = 'notification';
+            notification.classList.add(type);
+            notification.classList.add('show');
+            
+            setTimeout(() => {
+                notification.classList.remove('show');
+            }, 3000);
+        }
+
+        // Set up smooth scrolling for anchor links
+        function setupSmoothScrolling() {
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    const href = this.getAttribute('href');
+                    
+                    // Skip if it's just "#" or a modal link
+                    if (href === '#' || href === '#poemModal' || href === '#admin') return;
+                    
+                    e.preventDefault();
+                    
+                    const targetId = href.substring(1);
+                    const targetElement = document.getElementById(targetId);
+                    
+                    if (targetElement) {
+                        // Close mobile menu if open
+                        if (mainNav.classList.contains('active')) {
+                            mainNav.classList.remove('active');
+                            const icon = mobileMenuBtn.querySelector('i');
+                            icon.classList.remove('fa-times');
+                            icon.classList.add('fa-bars');
+                        }
+                        
+                        // Update active nav link
+                        document.querySelectorAll('nav a').forEach(link => {
+                            link.classList.remove('active');
+                        });
+                        this.classList.add('active');
+                        
+                        // Scroll to target
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 80,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        }
+
+        // Set up back to top button
+        function setupBackToTop() {
+            window.addEventListener('scroll', function() {
+                if (window.pageYOffset > 300) {
+                    backToTop.classList.add('visible');
+                } else {
+                    backToTop.classList.remove('visible');
+                }
+            });
+            
+            backToTop.addEventListener('click', function(e) {
+                e.preventDefault();
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+        }
+
+        // Handle browser back/forward buttons for poem modal
+        window.addEventListener('popstate', function(event) {
+            const hash = window.location.hash;
+            
+            if (hash && hash.startsWith('#poem-')) {
+                const poemId = parseInt(hash.replace('#poem-', ''));
+                openPoemModal(poemId);
+            } else {
+                closePoemModal();
+            }
+        });
+
+        // Add some sample poems on first visit
+        if (poems.length === 0) {
+            // You can add sample poems here if you want
+            // Or leave it empty for the user to add their own
+        }
+    </script>
+</body>
+</html>
