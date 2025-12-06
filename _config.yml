@@ -4,7 +4,7 @@
 title: "S.B. Poems - Poetry by Sidhi Batra"
 description: "A collection of beautiful poems by Sidhi Batra"
 url: "https://sidhibatra.github.io"
-baseurl: "/S.B.-poems"  # Your repository name
+baseurl: "/sbpoems"  # Your repository name
 author: "Sidhi Batra"
 
 # GitHub Pages settings
